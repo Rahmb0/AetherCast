@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with glow effect -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="energyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA500" />
+      <stop offset="100%" stop-color="#FF8C00" />
+    </linearGradient>
+    <linearGradient id="probabilityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9370DB" />
+      <stop offset="100%" stop-color="#8A2BE2" />
+    </linearGradient>
+    <linearGradient id="entropyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4500" />
+      <stop offset="100%" stop-color="#FF0000" />
+    </linearGradient>
+    <linearGradient id="timeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B9CD3" />
+      <stop offset="100%" stop-color="#1E90FF" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main circle -->
+  <circle cx="256" cy="256" r="220" fill="url(#circleGradient)" stroke="#334155" stroke-width="4" />
+
+  <!-- Outer pixelated circle -->
+  <path d="M256 36 L276 36 L296 40 L316 44 L334 50 L352 58 L370 68 L386 80 L402 92 L416 106 L430 122 
+           L442 138 L454 156 L462 174 L470 192 L476 212 L480 232 L484 252 L486 272 L486 292 L484 312 
+           L480 332 L476 352 L468 370 L460 388 L450 406 L438 422 L426 438 L412 452 L396 464 L380 476 
+           L362 486 L344 494 L326 500 L308 504 L288 508 L268 510 L248 510 L228 508 L208 504 L190 500 
+           L172 494 L154 486 L136 476 L120 464 L104 452 L90 438 L78 422 L66 406 L56 388 L48 370 L40 352 
+           L34 332 L30 312 L28 292 L28 272 L30 252 L34 232 L38 212 L44 192 L52 174 L60 156 L72 138 L84 122 
+           L98 106 L112 92 L128 80 L144 68 L162 58 L180 50 L198 44 L218 40 L238 36 Z" 
+        fill="none" stroke="white" stroke-width="2" />
+
+  <!-- Diamond shapes - central pattern -->
+  <!-- Center diamond -->
+  <path d="M256 156 L336 256 L256 356 L176 256 Z" fill="none" stroke="white" stroke-width="2" />
+  
+  <!-- Inner diamond -->
+  <path d="M256 196 L306 256 L256 316 L206 256 Z" fill="none" stroke="white" stroke-width="2" />
+
+  <!-- Cross elements -->
+  <!-- Vertical line -->
+  <path d="M256 96 L256 416" fill="none" stroke="white" stroke-width="2" />
+  
+  <!-- Horizontal line -->
+  <path d="M96 256 L416 256" fill="none" stroke="white" stroke-width="2" />
+
+  <!-- Element symbols at the four points -->
+  <!-- Energy (top) -->
+  <circle cx="256" cy="96" r="20" fill="url(#energyGradient)" filter="url(#glow)" opacity="0.8" />
+  <text x="256" y="102" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">E</text>
+
+  <!-- Probability (right) -->
+  <circle cx="416" cy="256" r="20" fill="url(#probabilityGradient)" filter="url(#glow)" opacity="0.8" />
+  <text x="416" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">P</text>
+
+  <!-- Entropy (bottom) -->
+  <circle cx="256" cy="416" r="20" fill="url(#entropyGradient)" filter="url(#glow)" opacity="0.8" />
+  <text x="256" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">En</text>
+
+  <!-- Time (left) -->
+  <circle cx="96" cy="256" r="20" fill="url(#timeGradient)" filter="url(#glow)" opacity="0.8" />
+  <text x="96" y="262" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">T</text>
+
+  <!-- Center node with glow -->
+  <circle cx="256" cy="256" r="15" fill="white" filter="url(#glow)" />
+  
+  <!-- Pixelated details around the center -->
+  <rect x="251" y="241" width="4" height="4" fill="white" />
+  <rect x="261" y="241" width="4" height="4" fill="white" />
+  <rect x="241" y="251" width="4" height="4" fill="white" />
+  <rect x="271" y="251" width="4" height="4" fill="white" />
+  <rect x="241" y="261" width="4" height="4" fill="white" />
+  <rect x="271" y="261" width="4" height="4" fill="white" />
+  <rect x="251" y="271" width="4" height="4" fill="white" />
+  <rect x="261" y="271" width="4" height="4" fill="white" />
+  
+  <!-- AetherScript text at the bottom if needed -->
+  <!-- <text x="256" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="white" filter="url(#glow)">AetherScript</text> -->
+</svg>
