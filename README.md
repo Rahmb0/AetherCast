@@ -79,4 +79,4 @@ To add new spell capabilities:
 
 ## License
 
-AetherCast is provided under the MIT License.
+AetherCast is provided under the GPL-3.0 License.
